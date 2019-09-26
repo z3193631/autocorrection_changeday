@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+gunicorn = "*"
+cacheout = "*"
+apscheduler = "*"
+boto3 = "*"
+pandas = "==0.23.4"
+numpy = "==1.15.2"
+sentry-sdk = {extras = ["flask"],version = "==0.9.5"}
+spacy = "*"
+jupyter = "*"
+
+[dev-packages]
+jupyter = "*"
+
+[requires]
+python_version = "3.6"
+
+[scripts]
+test = "pytest --cov"
+
+[pipenv]
+allow_prereleases = true
